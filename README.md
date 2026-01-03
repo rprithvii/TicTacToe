@@ -55,13 +55,6 @@ The project is built using the following classes:
 - Checks for winning conditions
 - Detects a full board (tie)
 
-### Game Controller
-- Controls the game flow
-- Alternates turns between players
-- Handles user input
-- Detects game over conditions
-- Restarts the game if the user chooses
-
 ---
 
 ## 🧪 Example Output
