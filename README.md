@@ -64,18 +64,8 @@ The project is built using the following classes:
 
 ---
 
-## ▶️ How to Run the Game
-
-1. Make sure Python is installed:
-```bash
-python --version
-
-2. Run the game
-python main.py
-
----
-
 ## 🧪 Example Output
+
 **************************
   Welcome to Tic-Tac-Toe  
 **************************
@@ -93,4 +83,22 @@ Python 3.8 or higher
 No external Python libraries are required
 
 The project uses only the Python standard library
+
+---
+
+## ▶️ How to Run the Game
+
+1. Make sure Python is installed:
+```bash
+python --version
+```
+
+2. Run the game
+```bash
+python main.py
+```
+
+---
+
+
 
