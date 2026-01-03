@@ -73,6 +73,8 @@ python --version
 2. Run the game
 python main.py
 
+---
+
 ## 🧪 Example Output
 **************************
   Welcome to Tic-Tac-Toe  
@@ -81,6 +83,8 @@ python main.py
 Please enter your move (1-9): 4
 Computer move (1-9): 8
 Awesome. You won the game! 🎉
+
+---
 
 ## 📦 Requirements
 
