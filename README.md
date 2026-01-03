@@ -12,11 +12,11 @@ A human player plays against a computer player that selects random moves.
 
 - The game is played on a **3×3 board**
 - Board positions are numbered from **1 to 9**
-
-| 1 | 2 | 3 | \n
-| 4 | 5 | 6 | \n
+```text
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
 | 7 | 8 | 9 |
-
+```
 
 - Human player uses marker **X**
 - Computer player uses marker **O**
@@ -65,7 +65,7 @@ The project is built using the following classes:
 ---
 
 ## 🧪 Example Output
-
+```
 **************************
   Welcome to Tic-Tac-Toe  
 **************************
@@ -74,6 +74,7 @@ Please enter your move (1-9): 4
 Computer move (1-9): 8
 Awesome. You won the game! 🎉
 
+```
 ---
 
 ## 📦 Requirements
