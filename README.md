@@ -13,8 +13,8 @@ A human player plays against a computer player that selects random moves.
 - The game is played on a **3×3 board**
 - Board positions are numbered from **1 to 9**
 
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
+| 1 | 2 | 3 | \n
+| 4 | 5 | 6 | \n
 | 7 | 8 | 9 |
 
 
@@ -73,7 +73,7 @@ python --version
 2. Run the game
 python main.py
 
-🧪 Example Output
+## 🧪 Example Output
 **************************
   Welcome to Tic-Tac-Toe  
 **************************
@@ -82,7 +82,7 @@ Please enter your move (1-9): 4
 Computer move (1-9): 8
 Awesome. You won the game! 🎉
 
-📦 Requirements
+## 📦 Requirements
 
 Python 3.8 or higher
 
