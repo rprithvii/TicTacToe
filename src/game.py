@@ -1,0 +1,55 @@
+import random
+import time 
+from src.player import Player
+from src.board import Board
+
+class Game:
+    def __init__(self, p1, p2, b1):
+        self.player = p1
+        self.computer = p2
+        self.board = b1
+
+    def start_game(self):
+        print(f"Welcome to the TicTacToe game. You will play against the computer\n")
+        return self.board.display_plain_board()
+
+    def start_rounds(self):
+        print(f"Use this guide to choose your move")
+        self.board.display_index_guide()
+        while not self.board.check_winner(): # Game loop to continue while someone wins the game
+            while True: #Keep trying unless player enters a valid value. In that case do break
+                try:
+                    self.board.display_current_board()
+                    # self.board.display_index_guide()
+                    print(f"\n")
+                    chosen_index = int(input(f"Choose your move from 1 to 9:"))    
+                    if self.board.check_chosen_value(chosen_index):
+                        self.board.update_board_player(chosen_index)
+                        break
+                except:
+                    print(f"Please enter a valid integer from 1 to 9")
+                    
+            self.board.display_current_board()
+
+            if self.board.check_winner() or len(self.board.already_chosen_indexes) == 9:
+                if not self.board.check_winner() and len(self.board.already_chosen_indexes) == 9:
+                    print(f"It's a draw")
+                break
+            
+            print(f"Computer is thinking..")
+            time.sleep(3)
+            while True: #Keep trying until valid value is chosen by the computer
+                
+                comp_choice = random.randint(1, 9)
+                if self.board.check_chosen_value(comp_choice):    
+                    self.board.update_board_computer(comp_choice)
+                    print(f"\n")
+                    break
+
+            
+
+
+            # if self.board.check_winner():
+            #     break
+        print(f"Game over")
+        # self.board.display_current_board()
