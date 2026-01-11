@@ -1,8 +1,6 @@
 from src.player import Player
 from src.board import Board
 from src.game import Game
-import random
-import time
 
 
 def main():

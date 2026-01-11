@@ -61,7 +61,7 @@ class Board:
         b = set(self.computer_indexes)
         if ({1, 2, 3}.issubset(a) or {4, 5, 6}.issubset(a) or {7, 8, 9}.issubset(a) or {1, 4, 7}.issubset(a) 
             or {2, 5, 8}.issubset(a) or {3, 6, 9}.issubset(a) or {1, 5, 9}.issubset(a) or {3, 5, 7}.issubset(a)):
-            print(f"You have won the game!!")
+            print(f"\nYou have won the game!!")
             # self.display_current_board()
             return True
         
@@ -69,8 +69,8 @@ class Board:
         or {7, 8, 9}.issubset(b) or {1, 4, 7}.issubset(b) 
         or {2, 5, 8}.issubset(b) or {3, 6, 9}.issubset(b) 
         or {1, 5, 9}.issubset(b) or {3, 5, 7}.issubset(b)):
-            print(f"Computer has won the game")
-            # self.display_current_board()
+            print(f"\nComputer has won the game")
+            self.display_current_board()
             return True
 
         else:
