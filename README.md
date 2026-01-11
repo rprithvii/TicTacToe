@@ -1,5 +1,7 @@
 # 🎮 Tic-Tac-Toe (Python, OOP)
 
+Play with the game on Replit here: https://replit.com/@mailprithvi/TicTacToe
+
 This is a **console-based Tic-Tac-Toe game** implemented in **Python** using **Object-Oriented Programming (OOP)** principles.
 
 The goal of this project is to practice designing clean classes, working with objects, and building game logic by letting objects interact with each other.
