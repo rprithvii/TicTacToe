@@ -29,14 +29,14 @@ class Board:
         
 
     def check_chosen_value(self, update_value_index):
-        if len(self.already_chosen_indexes)%2 == 0:
+        if len(self.already_chosen_indexes)%2 == 0: #It is player's turn
             if update_value_index in self.already_chosen_indexes:
                 print(f"This value is already taken. Please enter a different value which is not taken already!!") 
             elif isinstance(update_value_index, int) == False:
                 print(f"Please enter an integer")
             elif update_value_index >= 1 and update_value_index <= 9:
                 return True
-        else:
+        else: #It is computer's turn
             if update_value_index in self.already_chosen_indexes:
                 return False
             elif isinstance(update_value_index, int) == False:

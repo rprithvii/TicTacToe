@@ -16,7 +16,7 @@ class Game:
     def start_rounds(self):
         print(f"Use this guide to choose your move")
         self.board.display_index_guide()
-        while not self.board.check_winner(): # Game loop to continue while someone wins the game
+        while not self.board.check_winner(): # Game loop to continue till someone (either the player or the computer) wins the game
             while True: #Keep trying unless player enters a valid value. In that case do break
                 try:
                     self.board.display_current_board()
@@ -31,10 +31,17 @@ class Game:
                     
             self.board.display_current_board()
 
-            if self.board.check_winner() or len(self.board.already_chosen_indexes) == 9:
-                if not self.board.check_winner() and len(self.board.already_chosen_indexes) == 9:
-                    print(f"It's a draw")
+            if self.board.check_winner():
                 break
+            # if self.board.check_winner() or len(self.board.already_chosen_indexes) == 9:
+            #     if not self.board.check_winner() and len(self.board.already_chosen_indexes) == 9:
+            #         print(f"It's a draw")
+            #     break
+
+            if self.board.check_winner() and len(self.board.already_chosen_indexes) == 9:
+                print(f"It's a draw")
+                break
+            
             
             print(f"Computer is thinking..")
             time.sleep(3)
